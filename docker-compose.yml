@@ -1,0 +1,28 @@
+version: "3.7"
+
+services:
+   tarantool:
+      container_name: mytarantool
+      image: tarantool/tarantool:2.10
+      command: tarantool /usr/local/share/tarantool/init.lua
+      ports:
+         - 3301:3301
+      volumes:
+         - c:/Work/TarantoolSandbox/tarantool/app:/usr/local/share/tarantool
+         - c:/Work/TarantoolSandbox/tarantool/data:/var/lib/tarantool
+         
+   application-system-grpc:
+     image: ${DOCKER_REGISTRY}application-system-grpc
+     build:
+       context: .
+       dockerfile: ./tarantool-sandbox-api/ApplicationSystem/ApplicationSystem.Grpc/Dockerfile
+     environment:
+       - ASPNETCORE_ENVIRONMENT=Development
+
+   charging-system-grpc:
+     image: ${DOCKER_REGISTRY}charging-system-grpc
+     build:
+       context: .
+       dockerfile: ./tarantool-sandbox-api/ChargingSystem/ChargingSystem.Grpc/Dockerfile
+     environment:
+       - ASPNETCORE_ENVIRONMENT=Development

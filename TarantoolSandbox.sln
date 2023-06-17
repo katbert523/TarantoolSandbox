@@ -1,0 +1,87 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32210.238
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ApplicationSystem", "ApplicationSystem", "{016BE585-474B-4096-B285-CA8DCF604E44}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApplicationSystem.Application", "tarantool-sandbox-api\ApplicationSystem\ApplicationSystem.Application\ApplicationSystem.Application.csproj", "{FE58BADA-2C3F-45E4-91AE-283D7F4F3A55}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApplicationSystem.GrpcContracts", "tarantool-sandbox-api\ApplicationSystem\ApplicationSystem.GrpcContracts\ApplicationSystem.GrpcContracts.csproj", "{339EE042-4427-46FE-9130-8B1581E6C1FA}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApplicationSystem.Infrastructure", "tarantool-sandbox-api\ApplicationSystem\ApplicationSystem.Infrastructure\ApplicationSystem.Infrastructure.csproj", "{72FB7CE7-A690-48CB-846D-187975B8E33A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ChargingSystem", "ChargingSystem", "{40468070-03AF-4EAC-A368-27D1D2181662}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChargingSystem.Application", "tarantool-sandbox-api\ChargingSystem\ChargingSystem.Application\ChargingSystem.Application.csproj", "{2C6091B1-87CC-4244-AD43-47814E80EBB3}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChargingSystem.GrpcContracts", "tarantool-sandbox-api\ChargingSystem\ChargingSystem.GrpcContracts\ChargingSystem.GrpcContracts.csproj", "{ECD3CE09-3BCA-497C-8BE3-DCD63B9C6D62}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChargingSystem.Infrastructure", "tarantool-sandbox-api\ChargingSystem\ChargingSystem.Infrastructure\ChargingSystem.Infrastructure.csproj", "{1B6DA97C-AA29-4C99-92BE-2A7AD0CA03B1}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GrpcClient", "tarantool-sandbox-api\GrpcClient\GrpcClient.csproj", "{E43011E4-9C56-4E07-B44C-E78F90CD5D40}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChargingSystem.Grpc", "tarantool-sandbox-api\ChargingSystem\ChargingSystem.Grpc\ChargingSystem.Grpc.csproj", "{57FD8950-D06B-493D-ABC8-DAF3221F4DDA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApplicationSystem.Grpc", "tarantool-sandbox-api\ApplicationSystem\ApplicationSystem.Grpc\ApplicationSystem.Grpc.csproj", "{15E9877D-128C-46EC-A9D3-A2FF87AEFEF2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FE58BADA-2C3F-45E4-91AE-283D7F4F3A55}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE58BADA-2C3F-45E4-91AE-283D7F4F3A55}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE58BADA-2C3F-45E4-91AE-283D7F4F3A55}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE58BADA-2C3F-45E4-91AE-283D7F4F3A55}.Release|Any CPU.Build.0 = Release|Any CPU
+		{339EE042-4427-46FE-9130-8B1581E6C1FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{339EE042-4427-46FE-9130-8B1581E6C1FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{339EE042-4427-46FE-9130-8B1581E6C1FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{339EE042-4427-46FE-9130-8B1581E6C1FA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{72FB7CE7-A690-48CB-846D-187975B8E33A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{72FB7CE7-A690-48CB-846D-187975B8E33A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{72FB7CE7-A690-48CB-846D-187975B8E33A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{72FB7CE7-A690-48CB-846D-187975B8E33A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2C6091B1-87CC-4244-AD43-47814E80EBB3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C6091B1-87CC-4244-AD43-47814E80EBB3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2C6091B1-87CC-4244-AD43-47814E80EBB3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2C6091B1-87CC-4244-AD43-47814E80EBB3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ECD3CE09-3BCA-497C-8BE3-DCD63B9C6D62}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ECD3CE09-3BCA-497C-8BE3-DCD63B9C6D62}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ECD3CE09-3BCA-497C-8BE3-DCD63B9C6D62}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ECD3CE09-3BCA-497C-8BE3-DCD63B9C6D62}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1B6DA97C-AA29-4C99-92BE-2A7AD0CA03B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1B6DA97C-AA29-4C99-92BE-2A7AD0CA03B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1B6DA97C-AA29-4C99-92BE-2A7AD0CA03B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1B6DA97C-AA29-4C99-92BE-2A7AD0CA03B1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E43011E4-9C56-4E07-B44C-E78F90CD5D40}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E43011E4-9C56-4E07-B44C-E78F90CD5D40}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E43011E4-9C56-4E07-B44C-E78F90CD5D40}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E43011E4-9C56-4E07-B44C-E78F90CD5D40}.Release|Any CPU.Build.0 = Release|Any CPU
+		{57FD8950-D06B-493D-ABC8-DAF3221F4DDA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{57FD8950-D06B-493D-ABC8-DAF3221F4DDA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{57FD8950-D06B-493D-ABC8-DAF3221F4DDA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{57FD8950-D06B-493D-ABC8-DAF3221F4DDA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{15E9877D-128C-46EC-A9D3-A2FF87AEFEF2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{15E9877D-128C-46EC-A9D3-A2FF87AEFEF2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{15E9877D-128C-46EC-A9D3-A2FF87AEFEF2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{15E9877D-128C-46EC-A9D3-A2FF87AEFEF2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{FE58BADA-2C3F-45E4-91AE-283D7F4F3A55} = {016BE585-474B-4096-B285-CA8DCF604E44}
+		{339EE042-4427-46FE-9130-8B1581E6C1FA} = {016BE585-474B-4096-B285-CA8DCF604E44}
+		{72FB7CE7-A690-48CB-846D-187975B8E33A} = {016BE585-474B-4096-B285-CA8DCF604E44}
+		{2C6091B1-87CC-4244-AD43-47814E80EBB3} = {40468070-03AF-4EAC-A368-27D1D2181662}
+		{ECD3CE09-3BCA-497C-8BE3-DCD63B9C6D62} = {40468070-03AF-4EAC-A368-27D1D2181662}
+		{1B6DA97C-AA29-4C99-92BE-2A7AD0CA03B1} = {40468070-03AF-4EAC-A368-27D1D2181662}
+		{57FD8950-D06B-493D-ABC8-DAF3221F4DDA} = {40468070-03AF-4EAC-A368-27D1D2181662}
+		{15E9877D-128C-46EC-A9D3-A2FF87AEFEF2} = {016BE585-474B-4096-B285-CA8DCF604E44}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {07F96F14-E59D-4110-B819-A9C0B8D843D6}
+	EndGlobalSection
+EndGlobal
